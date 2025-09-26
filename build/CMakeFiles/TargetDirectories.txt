@@ -1,0 +1,3 @@
+/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles/check_headers.dir
+/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles/edit_cache.dir
+/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles/rebuild_cache.dir
