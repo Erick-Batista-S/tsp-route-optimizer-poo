@@ -4,7 +4,7 @@
 **Disciplina**: Programação Orientada a Objetos (C++)  
 **Universidade**: UFPB - Centro de Informática  
 **Autor**: Erick Batista da Silva  
-**Matrícula**: [Sua matrícula]
+**Matrícula**: 20240010967
 
 ## 📝 Descrição
 
