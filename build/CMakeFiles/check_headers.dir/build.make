@@ -68,11 +68,12 @@ include CMakeFiles/check_headers.dir/progress.make
 
 CMakeFiles/check_headers:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Verificando se todos os headers compilam corretamente..."
-	/usr/bin/c++ -std=c++17 -I/home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design -c /home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design/Point.h -o /dev/null
-	/usr/bin/c++ -std=c++17 -I/home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design -c /home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design/Graph.h -o /dev/null
-	/usr/bin/c++ -std=c++17 -I/home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design -c /home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design/Route.h -o /dev/null
-	/usr/bin/c++ -std=c++17 -I/home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design -c /home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design/TSPAlgorithm.h -o /dev/null
-	/usr/bin/c++ -std=c++17 -I/home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design -c /home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design/TSPException.h -o /dev/null
+	/usr/bin/c++ -std=c++17 -I/home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design -fsyntax-only /home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design/Point.h
+	/usr/bin/c++ -std=c++17 -I/home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design -fsyntax-only /home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design/Graph.h
+	/usr/bin/c++ -std=c++17 -I/home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design -fsyntax-only /home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design/Route.h
+	/usr/bin/c++ -std=c++17 -I/home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design -fsyntax-only /home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design/TSPAlgorithm.h
+	/usr/bin/c++ -std=c++17 -I/home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design -fsyntax-only /home/erick/Documents/Curso\ CDIA\ -\ UFPB/P3/Programação\ Orientada\ a\ Objetos/tsp-route-optimizer-poo/design/TSPException.h
+	echo ✅\ Todos\ os\ headers\ compilaram\ com\ sucesso!
 
 CMakeFiles/check_headers.dir/codegen:
 .PHONY : CMakeFiles/check_headers.dir/codegen

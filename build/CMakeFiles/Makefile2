@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = "/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Ori
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/tsp_cli.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen:
+codegen: CMakeFiles/tsp_cli.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +75,73 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/check_headers.dir/clean
+clean: CMakeFiles/tsp_cli.dir/clean
+clean: CMakeFiles/run_tests.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/check_headers.dir
+# Target rules for target CMakeFiles/tsp_cli.dir
 
 # All Build rule for target.
-CMakeFiles/check_headers.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/check_headers.dir/build.make CMakeFiles/check_headers.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/check_headers.dir/build.make CMakeFiles/check_headers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=1 "Built target check_headers"
-.PHONY : CMakeFiles/check_headers.dir/all
+CMakeFiles/tsp_cli.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_cli.dir/build.make CMakeFiles/tsp_cli.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_cli.dir/build.make CMakeFiles/tsp_cli.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=2,3 "Built target tsp_cli"
+.PHONY : CMakeFiles/tsp_cli.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/check_headers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/check_headers.dir/all
+CMakeFiles/tsp_cli.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tsp_cli.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" 0
-.PHONY : CMakeFiles/check_headers.dir/rule
+.PHONY : CMakeFiles/tsp_cli.dir/rule
 
 # Convenience name for target.
-check_headers: CMakeFiles/check_headers.dir/rule
-.PHONY : check_headers
+tsp_cli: CMakeFiles/tsp_cli.dir/rule
+.PHONY : tsp_cli
 
 # codegen rule for target.
-CMakeFiles/check_headers.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/check_headers.dir/build.make CMakeFiles/check_headers.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=1 "Finished codegen for target check_headers"
-.PHONY : CMakeFiles/check_headers.dir/codegen
+CMakeFiles/tsp_cli.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_cli.dir/build.make CMakeFiles/tsp_cli.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=2,3 "Finished codegen for target tsp_cli"
+.PHONY : CMakeFiles/tsp_cli.dir/codegen
 
 # clean rule for target.
-CMakeFiles/check_headers.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/check_headers.dir/build.make CMakeFiles/check_headers.dir/clean
-.PHONY : CMakeFiles/check_headers.dir/clean
+CMakeFiles/tsp_cli.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_cli.dir/build.make CMakeFiles/tsp_cli.dir/clean
+.PHONY : CMakeFiles/tsp_cli.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/run_tests.dir
+
+# All Build rule for target.
+CMakeFiles/run_tests.dir/all: CMakeFiles/tsp_cli.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=1 "Built target run_tests"
+.PHONY : CMakeFiles/run_tests.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/run_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" 0
+.PHONY : CMakeFiles/run_tests.dir/rule
+
+# Convenience name for target.
+run_tests: CMakeFiles/run_tests.dir/rule
+.PHONY : run_tests
+
+# codegen rule for target.
+CMakeFiles/run_tests.dir/codegen: CMakeFiles/tsp_cli.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=1 "Finished codegen for target run_tests"
+.PHONY : CMakeFiles/run_tests.dir/codegen
+
+# clean rule for target.
+CMakeFiles/run_tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/clean
+.PHONY : CMakeFiles/run_tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -Wextra -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/tsp_cli.dir/link.d CMakeFiles/tsp_cli.dir/src/main_final.cpp.o -o bin/tsp_optimizer

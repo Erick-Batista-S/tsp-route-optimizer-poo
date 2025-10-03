@@ -60,7 +60,7 @@ public:
      * @param point Ponto a ser adicionado (transfere propriedade)
      * @throws std::invalid_argument se ID já existe
      */
-    void addPoint(std::unique_ptr<Point> point);
+    void addPoint(const Point& point);
     
     /**
      * @brief Remove ponto por ID
