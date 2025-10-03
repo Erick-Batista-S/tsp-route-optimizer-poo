@@ -30,7 +30,7 @@ public:
      * @param name Nome do ponto
      * @param id Identificador único
      */
-    Point(double x, double y, const std::string& name, int id);
+    Point(double x, double y, const std::string& name = "", int id = 0);
     
     /**
      * @brief Construtor de cópia
@@ -54,7 +54,8 @@ public:
     int getId() const { return id_; }
     
     // Setters com validação
-    void setCoordinates(double x, double y);
+    void setX(double newX);
+    void setY(double newY);
     void setName(const std::string& name);
     
     /**

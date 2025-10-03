@@ -51,7 +51,9 @@ public:
     /**
      * @brief Define parâmetros do algoritmo (opcional)
      */
-    virtual void setParameters(const std::unordered_map<std::string, double>& params) {}
+    virtual void setParameters(const std::unordered_map<std::string, double>& params) {
+        (void)params; // Suppress unused parameter warning
+    }
     
     /**
      * @brief Obtém complexidade estimada
@@ -72,12 +74,16 @@ protected:
     /**
      * @brief Hook para pré-processamento (template method pattern)
      */
-    virtual void preProcess(const Graph& graph) {}
+    virtual void preProcess(const Graph& graph) {
+        (void)graph; // Suppress unused parameter warning
+    }
     
     /**
      * @brief Hook para pós-processamento
      */
-    virtual void postProcess(Route& route, const Graph& graph) {}
+    virtual void postProcess(Route& route, const Graph& graph) {
+        (void)route; (void)graph; // Suppress unused parameter warnings
+    }
 };
 
 /**

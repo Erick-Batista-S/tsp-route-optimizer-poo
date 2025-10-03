@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" "/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build//CMakeFiles/progress.marks"
@@ -117,17 +162,54 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named check_headers
+# Target rules for targets named tsp_cli
 
 # Build rule for target.
-check_headers: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 check_headers
-.PHONY : check_headers
+tsp_cli: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tsp_cli
+.PHONY : tsp_cli
 
 # fast build rule for target.
-check_headers/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/check_headers.dir/build.make CMakeFiles/check_headers.dir/build
-.PHONY : check_headers/fast
+tsp_cli/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_cli.dir/build.make CMakeFiles/tsp_cli.dir/build
+.PHONY : tsp_cli/fast
+
+#=============================================================================
+# Target rules for targets named run_tests
+
+# Build rule for target.
+run_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_tests
+.PHONY : run_tests
+
+# fast build rule for target.
+run_tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
+.PHONY : run_tests/fast
+
+src/main_final.o: src/main_final.cpp.o
+.PHONY : src/main_final.o
+
+# target to build an object file
+src/main_final.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_cli.dir/build.make CMakeFiles/tsp_cli.dir/src/main_final.cpp.o
+.PHONY : src/main_final.cpp.o
+
+src/main_final.i: src/main_final.cpp.i
+.PHONY : src/main_final.i
+
+# target to preprocess a source file
+src/main_final.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_cli.dir/build.make CMakeFiles/tsp_cli.dir/src/main_final.cpp.i
+.PHONY : src/main_final.cpp.i
+
+src/main_final.s: src/main_final.cpp.s
+.PHONY : src/main_final.s
+
+# target to generate assembly for a file
+src/main_final.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_cli.dir/build.make CMakeFiles/tsp_cli.dir/src/main_final.cpp.s
+.PHONY : src/main_final.cpp.s
 
 # Help Target
 help:
@@ -136,8 +218,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... check_headers"
+	@echo "... run_tests"
+	@echo "... tsp_cli"
+	@echo "... src/main_final.o"
+	@echo "... src/main_final.i"
+	@echo "... src/main_final.s"
 .PHONY : help
 
 
