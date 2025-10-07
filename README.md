@@ -1,12 +1,3 @@
-# 🚀 TSP Route Optimizer - Etapa 2 CLI
-
-<<<<<<< HEAD
-**Projeto**: Otimização de Rotas (Problema do Caixeiro Viajante)  
-**Disciplina**: Programação Orientada a Objetos (C++)  
-**Universidade**: UFPB - Centro de Informática  
-**Autor**: Erick Batista da Silva  
-**Matrícula**: 20240010967
-=======
 # 🚀 TSP Route Optimizer - Etapa 3 GUI Completa ✅
 
 **Projeto**: Otimização de Rotas (Problema do Caixeiro Viajante)  
@@ -159,7 +150,7 @@ make tsp_gui
 
 ✅ **Etapa 1** - Design das Classes (Concluída)  
 ✅ **Etapa 2** - CLI Funcional (Concluída)  
-🔄 **Etapa 3** - Interface Gráfica (Próxima)  
+✅ **Etapa 3** - Interface Gráfica (Concluída)  
 
 ## 🎯 Etapa 2 - Implementação CLI
 
@@ -241,11 +232,6 @@ make tsp_cli
 - Sem vazamentos de memória
 - Destruição automática e segura
 
----
-
-**🎉 Etapa 2 concluída com sucesso!**  
-**Todos os requisitos POO foram implementados e demonstrados.**
->>>>>>> a83e165 (Etapa 2: CLI Funcional Completo)
 ---
 
 **🎉 Etapa 3 concluída com sucesso!**  
