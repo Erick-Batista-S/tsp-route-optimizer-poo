@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 
 # Projeto TSP Route Optimizer
 project(tsp_route_optimizer 
-    VERSION 2.0.0
+    VERSION 3.0.0
     DESCRIPTION "Traveling Salesman Problem Route Optimizer - POO Project"
     LANGUAGES CXX
 )
@@ -50,14 +50,7 @@ set(HEADERS
     design/TSPException.h
 )
 
-# Arquivos fonte da implementação (Etapa 2)
-set(SOURCES
-    src/Point.cpp
-    src/Graph.cpp
-    src/Route.cpp
-    src/TSPAlgorithm.cpp
-    src/TSPException.cpp
-)
+# Arquivos fonte da implementação (removidos - usando implementações inline)
 
 # ========================================
 # ETAPA 2: Executável CLI funcional  
@@ -89,18 +82,78 @@ add_custom_target(run_tests
 )
 
 # ========================================
-# ETAPA 3: GUI (futuro)
+# ETAPA 3: GUI com Qt6
 # ========================================
 
-if(Qt6_FOUND OR Qt5_FOUND)
-    message(STATUS "Qt encontrado - GUI será implementada na Etapa 3")
-    # GUI será implementada na próxima etapa
+if(Qt6_FOUND)
+    message(STATUS "Configurando GUI com Qt6...")
+    
+    # Habilitar MOC (Meta-Object Compiler)
+    set(CMAKE_AUTOMOC ON)
+    set(CMAKE_AUTORCC ON)
+    set(CMAKE_AUTOUIC ON)
+    
+    # Arquivos da GUI
+    set(GUI_HEADERS
+        src/gui/MainWindow.h
+        src/gui/GraphView.h
+        src/gui/RouteVisualizer.h
+    )
+    
+    set(GUI_SOURCES
+        src/gui/MainWindow.cpp
+        src/gui/GraphView.cpp
+        src/gui/RouteVisualizer.cpp
+        src/gui/main_gui.cpp
+    )
+    
+    # Executável GUI
+    add_executable(tsp_gui 
+        ${GUI_SOURCES}
+        ${GUI_HEADERS}
+    )
+    
+    # Linkar com Qt6
+    target_link_libraries(tsp_gui 
+        Qt6::Core 
+        Qt6::Widgets 
+        Qt6::Gui
+    )
+    
+    target_include_directories(tsp_gui PRIVATE 
+        ${CMAKE_SOURCE_DIR}
+        ${CMAKE_SOURCE_DIR}/design
+        ${CMAKE_SOURCE_DIR}/src
+        ${CMAKE_SOURCE_DIR}/src/gui
+    )
+    
+    # Configurar propriedades do executável GUI
+    set_target_properties(tsp_gui PROPERTIES
+        OUTPUT_NAME "tsp_gui"
+        RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
+    )
+    
+    # Target para executar GUI
+    add_custom_target(run_gui
+        COMMAND ${CMAKE_BINARY_DIR}/bin/tsp_gui
+        DEPENDS tsp_gui
+        WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+        COMMENT "Executando aplicação GUI do TSP"
+    )
+    
+    message(STATUS "GUI configurada com sucesso!")
+    
+elseif(Qt5_FOUND)
+    message(STATUS "Qt5 encontrado mas Qt6 preferido - implementar se necessário")
 else()
-    message(STATUS "Qt não encontrado - apenas CLI disponível")
+    message(WARNING "Qt não encontrado - apenas CLI disponível")
 endif()
 
 # Instalação
 install(TARGETS tsp_cli DESTINATION bin)
+if(Qt6_FOUND)
+    install(TARGETS tsp_gui DESTINATION bin)
+endif()
 
 # Resumo da configuração
 message(STATUS "")

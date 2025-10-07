@@ -64,10 +64,12 @@ CMAKE_BINARY_DIR = "/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Ori
 
 # The main recursive "all" target.
 all: CMakeFiles/tsp_cli.dir/all
+all: CMakeFiles/tsp_gui.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/tsp_cli.dir/codegen
+codegen: CMakeFiles/tsp_gui.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -77,6 +79,10 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/tsp_cli.dir/clean
 clean: CMakeFiles/run_tests.dir/clean
+clean: CMakeFiles/tsp_gui.dir/clean
+clean: CMakeFiles/run_gui.dir/clean
+clean: CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/clean
+clean: CMakeFiles/tsp_gui_autogen.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -86,7 +92,7 @@ clean: CMakeFiles/run_tests.dir/clean
 CMakeFiles/tsp_cli.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_cli.dir/build.make CMakeFiles/tsp_cli.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_cli.dir/build.make CMakeFiles/tsp_cli.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=2,3 "Built target tsp_cli"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=3,4 "Built target tsp_cli"
 .PHONY : CMakeFiles/tsp_cli.dir/all
 
 # Build rule for subdir invocation for target.
@@ -103,7 +109,7 @@ tsp_cli: CMakeFiles/tsp_cli.dir/rule
 # codegen rule for target.
 CMakeFiles/tsp_cli.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_cli.dir/build.make CMakeFiles/tsp_cli.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=2,3 "Finished codegen for target tsp_cli"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=3,4 "Finished codegen for target tsp_cli"
 .PHONY : CMakeFiles/tsp_cli.dir/codegen
 
 # clean rule for target.
@@ -118,7 +124,7 @@ CMakeFiles/tsp_cli.dir/clean:
 CMakeFiles/run_tests.dir/all: CMakeFiles/tsp_cli.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=1 "Built target run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=2 "Built target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/all
 
 # Build rule for subdir invocation for target.
@@ -135,13 +141,142 @@ run_tests: CMakeFiles/run_tests.dir/rule
 # codegen rule for target.
 CMakeFiles/run_tests.dir/codegen: CMakeFiles/tsp_cli.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=1 "Finished codegen for target run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=2 "Finished codegen for target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/codegen
 
 # clean rule for target.
 CMakeFiles/run_tests.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/clean
 .PHONY : CMakeFiles/run_tests.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tsp_gui.dir
+
+# All Build rule for target.
+CMakeFiles/tsp_gui.dir/all: CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/all
+CMakeFiles/tsp_gui.dir/all: CMakeFiles/tsp_gui_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=5,6,7,8,9,10,11 "Built target tsp_gui"
+.PHONY : CMakeFiles/tsp_gui.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tsp_gui.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tsp_gui.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" 0
+.PHONY : CMakeFiles/tsp_gui.dir/rule
+
+# Convenience name for target.
+tsp_gui: CMakeFiles/tsp_gui.dir/rule
+.PHONY : tsp_gui
+
+# codegen rule for target.
+CMakeFiles/tsp_gui.dir/codegen: CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=5,6,7,8,9,10,11 "Finished codegen for target tsp_gui"
+.PHONY : CMakeFiles/tsp_gui.dir/codegen
+
+# clean rule for target.
+CMakeFiles/tsp_gui.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/clean
+.PHONY : CMakeFiles/tsp_gui.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/run_gui.dir
+
+# All Build rule for target.
+CMakeFiles/run_gui.dir/all: CMakeFiles/tsp_gui.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_gui.dir/build.make CMakeFiles/run_gui.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_gui.dir/build.make CMakeFiles/run_gui.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=1 "Built target run_gui"
+.PHONY : CMakeFiles/run_gui.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/run_gui.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run_gui.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" 0
+.PHONY : CMakeFiles/run_gui.dir/rule
+
+# Convenience name for target.
+run_gui: CMakeFiles/run_gui.dir/rule
+.PHONY : run_gui
+
+# codegen rule for target.
+CMakeFiles/run_gui.dir/codegen: CMakeFiles/tsp_gui.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_gui.dir/build.make CMakeFiles/run_gui.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=1 "Finished codegen for target run_gui"
+.PHONY : CMakeFiles/run_gui.dir/codegen
+
+# clean rule for target.
+CMakeFiles/run_gui.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_gui.dir/build.make CMakeFiles/run_gui.dir/clean
+.PHONY : CMakeFiles/run_gui.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tsp_gui_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/build.make CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/build.make CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num= "Built target tsp_gui_autogen_timestamp_deps"
+.PHONY : CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" 0
+.PHONY : CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+tsp_gui_autogen_timestamp_deps: CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/rule
+.PHONY : tsp_gui_autogen_timestamp_deps
+
+# codegen rule for target.
+CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/build.make CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num= "Finished codegen for target tsp_gui_autogen_timestamp_deps"
+.PHONY : CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/codegen
+
+# clean rule for target.
+CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/build.make CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/clean
+.PHONY : CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tsp_gui_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/tsp_gui_autogen.dir/all: CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui_autogen.dir/build.make CMakeFiles/tsp_gui_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui_autogen.dir/build.make CMakeFiles/tsp_gui_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=12 "Built target tsp_gui_autogen"
+.PHONY : CMakeFiles/tsp_gui_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tsp_gui_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tsp_gui_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" 0
+.PHONY : CMakeFiles/tsp_gui_autogen.dir/rule
+
+# Convenience name for target.
+tsp_gui_autogen: CMakeFiles/tsp_gui_autogen.dir/rule
+.PHONY : tsp_gui_autogen
+
+# codegen rule for target.
+CMakeFiles/tsp_gui_autogen.dir/codegen: CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui_autogen.dir/build.make CMakeFiles/tsp_gui_autogen.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles" --progress-num=12 "Finished codegen for target tsp_gui_autogen"
+.PHONY : CMakeFiles/tsp_gui_autogen.dir/codegen
+
+# clean rule for target.
+CMakeFiles/tsp_gui_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui_autogen.dir/build.make CMakeFiles/tsp_gui_autogen.dir/clean
+.PHONY : CMakeFiles/tsp_gui_autogen.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

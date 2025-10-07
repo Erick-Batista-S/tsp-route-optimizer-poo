@@ -357,6 +357,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "CMakeFiles/tsp_gui_autogen.dir/AutogenInfo.json"
   ".qt/QtDeploySupport.cmake"
   ".qt/QtDeployTargets.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -366,4 +367,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/tsp_cli.dir/DependInfo.cmake"
   "CMakeFiles/run_tests.dir/DependInfo.cmake"
+  "CMakeFiles/tsp_gui.dir/DependInfo.cmake"
+  "CMakeFiles/run_gui.dir/DependInfo.cmake"
+  "CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/DependInfo.cmake"
+  "CMakeFiles/tsp_gui_autogen.dir/DependInfo.cmake"
   )

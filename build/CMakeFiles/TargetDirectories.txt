@@ -1,8 +1,12 @@
 /home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles/tsp_cli.dir
 /home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles/run_tests.dir
+/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles/tsp_gui.dir
+/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles/run_gui.dir
 /home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles/edit_cache.dir
 /home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles/rebuild_cache.dir
 /home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles/list_install_components.dir
 /home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles/install.dir
 /home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles/install/local.dir
 /home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles/install/strip.dir
+/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles/tsp_gui_autogen_timestamp_deps.dir
+/home/erick/Documents/Curso CDIA - UFPB/P3/Programação Orientada a Objetos/tsp-route-optimizer-poo/build/CMakeFiles/tsp_gui_autogen.dir

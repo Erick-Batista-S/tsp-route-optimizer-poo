@@ -187,6 +187,154 @@ run_tests/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
 .PHONY : run_tests/fast
 
+#=============================================================================
+# Target rules for targets named tsp_gui
+
+# Build rule for target.
+tsp_gui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tsp_gui
+.PHONY : tsp_gui
+
+# fast build rule for target.
+tsp_gui/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/build
+.PHONY : tsp_gui/fast
+
+#=============================================================================
+# Target rules for targets named run_gui
+
+# Build rule for target.
+run_gui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_gui
+.PHONY : run_gui
+
+# fast build rule for target.
+run_gui/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_gui.dir/build.make CMakeFiles/run_gui.dir/build
+.PHONY : run_gui/fast
+
+#=============================================================================
+# Target rules for targets named tsp_gui_autogen_timestamp_deps
+
+# Build rule for target.
+tsp_gui_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tsp_gui_autogen_timestamp_deps
+.PHONY : tsp_gui_autogen_timestamp_deps
+
+# fast build rule for target.
+tsp_gui_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/build.make CMakeFiles/tsp_gui_autogen_timestamp_deps.dir/build
+.PHONY : tsp_gui_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named tsp_gui_autogen
+
+# Build rule for target.
+tsp_gui_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tsp_gui_autogen
+.PHONY : tsp_gui_autogen
+
+# fast build rule for target.
+tsp_gui_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui_autogen.dir/build.make CMakeFiles/tsp_gui_autogen.dir/build
+.PHONY : tsp_gui_autogen/fast
+
+src/gui/GraphView.o: src/gui/GraphView.cpp.o
+.PHONY : src/gui/GraphView.o
+
+# target to build an object file
+src/gui/GraphView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/src/gui/GraphView.cpp.o
+.PHONY : src/gui/GraphView.cpp.o
+
+src/gui/GraphView.i: src/gui/GraphView.cpp.i
+.PHONY : src/gui/GraphView.i
+
+# target to preprocess a source file
+src/gui/GraphView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/src/gui/GraphView.cpp.i
+.PHONY : src/gui/GraphView.cpp.i
+
+src/gui/GraphView.s: src/gui/GraphView.cpp.s
+.PHONY : src/gui/GraphView.s
+
+# target to generate assembly for a file
+src/gui/GraphView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/src/gui/GraphView.cpp.s
+.PHONY : src/gui/GraphView.cpp.s
+
+src/gui/MainWindow.o: src/gui/MainWindow.cpp.o
+.PHONY : src/gui/MainWindow.o
+
+# target to build an object file
+src/gui/MainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/src/gui/MainWindow.cpp.o
+.PHONY : src/gui/MainWindow.cpp.o
+
+src/gui/MainWindow.i: src/gui/MainWindow.cpp.i
+.PHONY : src/gui/MainWindow.i
+
+# target to preprocess a source file
+src/gui/MainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/src/gui/MainWindow.cpp.i
+.PHONY : src/gui/MainWindow.cpp.i
+
+src/gui/MainWindow.s: src/gui/MainWindow.cpp.s
+.PHONY : src/gui/MainWindow.s
+
+# target to generate assembly for a file
+src/gui/MainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/src/gui/MainWindow.cpp.s
+.PHONY : src/gui/MainWindow.cpp.s
+
+src/gui/RouteVisualizer.o: src/gui/RouteVisualizer.cpp.o
+.PHONY : src/gui/RouteVisualizer.o
+
+# target to build an object file
+src/gui/RouteVisualizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/src/gui/RouteVisualizer.cpp.o
+.PHONY : src/gui/RouteVisualizer.cpp.o
+
+src/gui/RouteVisualizer.i: src/gui/RouteVisualizer.cpp.i
+.PHONY : src/gui/RouteVisualizer.i
+
+# target to preprocess a source file
+src/gui/RouteVisualizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/src/gui/RouteVisualizer.cpp.i
+.PHONY : src/gui/RouteVisualizer.cpp.i
+
+src/gui/RouteVisualizer.s: src/gui/RouteVisualizer.cpp.s
+.PHONY : src/gui/RouteVisualizer.s
+
+# target to generate assembly for a file
+src/gui/RouteVisualizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/src/gui/RouteVisualizer.cpp.s
+.PHONY : src/gui/RouteVisualizer.cpp.s
+
+src/gui/main_gui.o: src/gui/main_gui.cpp.o
+.PHONY : src/gui/main_gui.o
+
+# target to build an object file
+src/gui/main_gui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/src/gui/main_gui.cpp.o
+.PHONY : src/gui/main_gui.cpp.o
+
+src/gui/main_gui.i: src/gui/main_gui.cpp.i
+.PHONY : src/gui/main_gui.i
+
+# target to preprocess a source file
+src/gui/main_gui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/src/gui/main_gui.cpp.i
+.PHONY : src/gui/main_gui.cpp.i
+
+src/gui/main_gui.s: src/gui/main_gui.cpp.s
+.PHONY : src/gui/main_gui.s
+
+# target to generate assembly for a file
+src/gui/main_gui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/src/gui/main_gui.cpp.s
+.PHONY : src/gui/main_gui.cpp.s
+
 src/main_final.o: src/main_final.cpp.o
 .PHONY : src/main_final.o
 
@@ -211,6 +359,30 @@ src/main_final.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_cli.dir/build.make CMakeFiles/tsp_cli.dir/src/main_final.cpp.s
 .PHONY : src/main_final.cpp.s
 
+tsp_gui_autogen/mocs_compilation.o: tsp_gui_autogen/mocs_compilation.cpp.o
+.PHONY : tsp_gui_autogen/mocs_compilation.o
+
+# target to build an object file
+tsp_gui_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/tsp_gui_autogen/mocs_compilation.cpp.o
+.PHONY : tsp_gui_autogen/mocs_compilation.cpp.o
+
+tsp_gui_autogen/mocs_compilation.i: tsp_gui_autogen/mocs_compilation.cpp.i
+.PHONY : tsp_gui_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+tsp_gui_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/tsp_gui_autogen/mocs_compilation.cpp.i
+.PHONY : tsp_gui_autogen/mocs_compilation.cpp.i
+
+tsp_gui_autogen/mocs_compilation.s: tsp_gui_autogen/mocs_compilation.cpp.s
+.PHONY : tsp_gui_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+tsp_gui_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsp_gui.dir/build.make CMakeFiles/tsp_gui.dir/tsp_gui_autogen/mocs_compilation.cpp.s
+.PHONY : tsp_gui_autogen/mocs_compilation.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -223,11 +395,30 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... run_gui"
 	@echo "... run_tests"
+	@echo "... tsp_gui_autogen"
+	@echo "... tsp_gui_autogen_timestamp_deps"
 	@echo "... tsp_cli"
+	@echo "... tsp_gui"
+	@echo "... src/gui/GraphView.o"
+	@echo "... src/gui/GraphView.i"
+	@echo "... src/gui/GraphView.s"
+	@echo "... src/gui/MainWindow.o"
+	@echo "... src/gui/MainWindow.i"
+	@echo "... src/gui/MainWindow.s"
+	@echo "... src/gui/RouteVisualizer.o"
+	@echo "... src/gui/RouteVisualizer.i"
+	@echo "... src/gui/RouteVisualizer.s"
+	@echo "... src/gui/main_gui.o"
+	@echo "... src/gui/main_gui.i"
+	@echo "... src/gui/main_gui.s"
 	@echo "... src/main_final.o"
 	@echo "... src/main_final.i"
 	@echo "... src/main_final.s"
+	@echo "... tsp_gui_autogen/mocs_compilation.o"
+	@echo "... tsp_gui_autogen/mocs_compilation.i"
+	@echo "... tsp_gui_autogen/mocs_compilation.s"
 .PHONY : help
 
 
